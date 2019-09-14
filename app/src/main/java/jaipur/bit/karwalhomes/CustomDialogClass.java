@@ -17,30 +17,34 @@ import java.util.ArrayList;
 public class CustomDialogClass extends Dialog implements
         android.view.View.OnClickListener {
 
-    private final SingleItem singleItem;
     public Activity c;
     public Dialog d;
     TextView tv1,tv2,tv3;
     ImageView imageView;
-     RecyclerView mRecyclerView;
-    ArrayList<Integer> arrayList;
-    MyAdapter2 myAdapter2;
+     private RecyclerView mRecyclerView;
+    private MyAdapter2 myAdapter2;
     LinearLayoutManager layoutManager;
     CustomDialogClass(Activity a, SingleItem singleItem) {
         super(a);
         // TODO Auto-generated constructor stub
-        arrayList=new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
          layoutManager= new LinearLayoutManager(c, LinearLayoutManager.HORIZONTAL, false);
 
         Log.d("RECYCLER VIEW FOUND ",""+mRecyclerView);
         this.c = a;
-        this.singleItem=singleItem;
+        SingleItem singleItem1 = singleItem;
 
-        arrayList.add(R.drawable.a);
-        arrayList.add(R.drawable.a);
-        arrayList.add(R.drawable.a);
-        arrayList.add(R.drawable.a);
-        arrayList.add(R.drawable.a);
+        arrayList.add(R.drawable.aa);
+        arrayList.add(R.drawable.ab);
+        arrayList.add(R.drawable.ac);
+        arrayList.add(R.drawable.ad);
+        arrayList.add(R.drawable.ae);
+        arrayList.add(R.drawable.af);
+        arrayList.add(R.drawable.ag);
+        arrayList.add(R.drawable.ah);
+        arrayList.add(R.drawable.ai);
+        arrayList.add(R.drawable.aj);
+        arrayList.add(R.drawable.ak);
 
 
         myAdapter2 = new MyAdapter2(this, arrayList);
